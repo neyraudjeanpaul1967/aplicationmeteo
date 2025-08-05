@@ -72,7 +72,7 @@ export default async function handler(req, res) {
     }
 
     // Configuration de l'URL de base pour les redirections
-    const baseUrl = process.env.NEXTAUTH_URL || "http://localhost:3000";
+    const baseUrl = process.env.NEXTAUTH_URL;
 
     console.log("🔧 Configuration session Stripe...");
 
