@@ -1,0 +1,65 @@
+/\*\*
+
+- DOCUMENTATION COMPLÈTE DU PROJET MÉTÉO DE JEAN-PAUL
+- =======================================================
+-
+- Application météo Next.js avec système de favoris et abonnement premium
+-
+- ARCHITECTURE DU PROJET:
+- ├── components/ # Composants React réutilisables
+- │ ├── Header.js # En-tête avec logo et auth ✅ COMMENTÉ
+- │ ├── Hero.js # Composant principal météo
+- │ ├── Footer.js # Pied de page
+- │ ├── FavorisManager.js # Gestion des villes favorites ✅ COMMENTÉ (partiel)
+- │ ├── PremiumStatus.js # Affichage statut premium ✅ COMMENTÉ
+- │ └── StripeLayout.js # Layout pour Stripe
+- ├── contexts/ # Contextes React
+- │ └── AuthContext.js # Gestion de l'authentification
+- ├── lib/ # Bibliothèques et utilitaires
+- │ ├── database.js # Configuration base de données
+- │ ├── supabase.js # Client Supabase
+- │ ├── supabaseAdmin.js # Client admin Supabase
+- │ ├── stripe.js # Configuration Stripe
+- │ ├── favorisService.js # Service des favoris
+- │ └── validations.js # Validations formulaires
+- ├── pages/ # Pages Next.js
+- │ ├── index.js # Page d'accueil
+- │ ├── success.js # Page succès paiement
+- │ ├── \_app.js # Configuration app
+- │ ├── api/ # API Routes
+- │ │ ├── auth/ # Authentification NextAuth
+- │ │ ├── favoris/ # API gestion favoris
+- │ │ ├── users/ # API gestion utilisateurs
+- │ │ └── checkout-sessions/ # API Stripe
+- │ ├── auth/ # Pages d'authentification
+- │ └── profile/ # Page profil utilisateur
+- ├── public/ # Fichiers statiques
+- │ ├── assets/img/ # Images de l'application
+- │ └── manifest.json # Manifest PWA
+- └── styles/ # Styles CSS
+-     └── globals.css      # Styles globaux Tailwind
+-
+- FONCTIONNALITÉS PRINCIPALES:
+- 1.  🌤️ Consultation météo par ville
+- 2.  ⭐ Système de favoris (3 villes max gratuit)
+- 3.  💳 Abonnement premium via Stripe
+- 4.  👤 Gestion d'utilisateurs avec Supabase
+- 5.  🔐 Authentification sécurisée
+- 6.  📱 Design responsive
+-
+- TECHNOLOGIES UTILISÉES:
+- - Next.js 14.0.0 (React Framework)
+- - Supabase (Base de données et auth)
+- - Stripe (Paiements)
+- - Tailwind CSS (Styling)
+- - OpenWeatherMap API (Données météo)
+-
+- ÉTAT DES COMMENTAIRES:
+- ✅ PremiumStatus.js - COMPLET
+- ✅ Header.js - COMPLET
+- 🔄 FavorisManager.js - EN COURS
+- ⏳ Hero.js - À FAIRE
+- ⏳ AuthContext.js - À FAIRE
+- ⏳ Pages API - À FAIRE
+- ⏳ Pages principales - À FAIRE
+  \*/

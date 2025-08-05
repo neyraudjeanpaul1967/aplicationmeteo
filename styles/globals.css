@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS personnalisées pour compatibilité */
+:root {
+  --couleur--backgroud--titel: #131d5c;
+  --couleur--backgroud--matin: #c59556;
+  --couleur--backgroud--apres-midi: #c1fa06;
+  --couleur--backgroud--soiré: #da2121;
+  --couleur--backgroud--bleu: #2d93aa;
+}
+
+/* Réinitialisation globale */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style du body */
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  background-image: url("/assets/img/fond.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Classes utilitaires personnalisées */
+@layer components {
+  .carousel-height {
+    height: 22rem; /* 352px équivalent lg:h-88 */
+  }
+
+  .bg-fond-container {
+    background-image: url("/assets/img/fond.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* Responsive breakpoints pour le carrousel */
+@media (min-width: 1024px) {
+  .carousel-height {
+    height: 22rem;
+  }
+}
